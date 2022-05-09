@@ -20,7 +20,7 @@ func main() {
 }
 
 func createOrder() {
-	result, apiError := client.CreateOrder("www.baidu.com", "www.taobao.com", "test20220509001", "100", "TRX", "25")
+	result, apiError := client.CreateOrder("http://bkmvpggq.nc/olxtgwn", "http://trlwgf.et/ogtl", "bcb9559afce6477b92e0d05c01cd4be0", "100", "TRX", "25")
 	if apiError != nil {
 		fmt.Println("Error >>>>>>>>")
 		fmt.Println(apiError)
@@ -32,7 +32,7 @@ func createOrder() {
 }
 
 func queryOrder() {
-	result, apiError := client.QueryOrder("29N3FVHO")
+	result, apiError := client.QueryOrder("9QLDFBED")
 	if apiError != nil {
 		fmt.Println("Error >>>>>>>>")
 		fmt.Println(apiError)

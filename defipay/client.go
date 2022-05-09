@@ -5,7 +5,6 @@ import (
 	"github.com/bitly/go-simplejson"
 	"io/ioutil"
 	"net/http"
-	"net/url"
 	"sort"
 	"strings"
 	"time"
@@ -163,7 +162,8 @@ func SortParams(params map[string]string) string {
 	sorted := make([]string, len(params))
 	i = 0
 	for _, k := range keys {
-		sorted[i] = k + "=" + url.QueryEscape(params[k])
+		//sorted[i] = k + "=" + url.QueryEscape(params[k])
+		sorted[i] = k + "=" + params[k]
 		i++
 	}
 	return strings.Join(sorted, "&")
