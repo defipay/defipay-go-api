@@ -33,7 +33,7 @@ defipay-go-api 是一個輕量級的 go 庫，用於與[Defipay API](http://doc.
 
 ``` 
 go get github.com/btcsuite/btcd/btcec@v0.22
-go get github.com/defipay/defipay-go-sdk
+go get github.com/defipay/defipay-go-sdk/defipay
 ```
 
 ## 測試
