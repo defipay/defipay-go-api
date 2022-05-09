@@ -93,7 +93,7 @@ client.CreateOrder("http://xcsewvb.ao/nhhcn", "http://da1.ao/djjke", "2a1ca44207
 <summary>響應視圖</summary>
 
 ```
-{"code":200,"msg":"OK","data":{"amount":"100","cashierUrl":"http://www.defipay.biz/customer/#/order/9QLDFBED","currency":"TRX","currencyLogoUrl":"https://defipay-test.oss-cn-hangzhou.aliyuncs.com/defipay_v_1.0/c205901ff60f4d588d4617bbaa0bc939.png","memberTransNo":"bcb9559afce6477b92e0d05c01cd4be0","tokenInfo":[{"address":"TVCsvmAvKyubwJtLweHhwDqKWtn8iXrWhJ","amount":"100","chainAssertDecimal":6,"chainAssertId":null,"chainId":null,"coinType":"Mainnet","displayName":"TRX","logoUrl":"https://defipay-test.oss-cn-hangzhou.aliyuncs.com/defipay_v_1.0/c205901ff60f4d588d4617bbaa0bc939.png","shortName":"TRX"}],"transNo":"9QLDFBED"},"success":true}
+{"code":200,"msg":"OK","data":{"amount":"100","cashierUrl":"http://www.defipay.biz/customer/#/order/9QLDFBED","currency":"TRX","currencyLogoUrl":"https://defipay-test.oss-cn-hangzhou.aliyuncs.com/defipay_v_1.0/c205901ff60f4d588d4617bbaa0bc939.png","memberTransNo":"2a1ca442077e49edb91306701b3b0255","tokenInfo":[{"address":"TVCsvmAvKyubwJtLweHhwDqKWtn8iXrWhJ","amount":"100","chainAssertDecimal":6,"chainAssertId":null,"chainId":null,"coinType":"Mainnet","displayName":"TRX","logoUrl":"https://defipay-test.oss-cn-hangzhou.aliyuncs.com/defipay_v_1.0/c205901ff60f4d588d4617bbaa0bc939.png","shortName":"TRX"}],"transNo":"9QLDFBED"},"success":true}
 ```
 </details>
 
@@ -126,13 +126,13 @@ client.CreatePayoutOrder("http://mjyfxsum.ci/awckrxllk", "c412524cb01c4bd383adgc
 
 #### 提現交易查詢
 ```
-client.QueryPayoutOrder("9QLDFBED")
+client.QueryPayoutOrder("3TJ0L2M5")
 ```
 <details>
 <summary>響應視圖</summary>
 
 ```
-{"code":200,"msg":"OK","data":{"amount":"100","billAmount":"","createTime":"1652076718","currency":"TRX","id":null,"memberSeq":"80000032","memberTransNo":"bcb9559afce6477b92e0d05c01cd4be0","settleTime":"0","shortName":"","state":"300","toAddress":"","transNo":"9QLDFBED"},"success":true}
+{"code":200,"msg":"OK","data":{"amount":"100","billAmount":"","createTime":"1652076718","currency":"TRX","id":null,"memberSeq":"80000032","memberTransNo":"bcb9559afce6477b92e0d05c01cd4be0","settleTime":"0","shortName":"","state":"300","toAddress":"","transNo":"3TJ0L2M5"},"success":true}
 ```
 </details>
 
