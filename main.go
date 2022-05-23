@@ -32,7 +32,7 @@ func createOrder() {
 }
 
 func queryOrder() {
-	result, apiError := client.QueryOrder("9QLDFBED")
+	result, apiError := client.QueryOrder("9QLDKBED")
 	if apiError != nil {
 		fmt.Println("Error >>>>>>>>")
 		fmt.Println(apiError)
