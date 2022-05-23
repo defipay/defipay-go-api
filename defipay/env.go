@@ -6,9 +6,9 @@ type Env struct {
 }
 
 func Sandbox() Env {
-	return Env{Host: "http://api-test.defipay.biz/api-service", PubKey: "03412208e920ba78d97c33c1476db11506cb6d4b3fc218a8207ca523c8d392a3f0"}
+	return Env{Host: "https://api-test.defipay.biz/api-service", PubKey: "0314c127b69c03545b49aaf365c56575ce9b1640cad8eb6ca47c34c8322fe9f4d4"}
 }
 
 func Prod() Env {
-	return Env{Host: "https://api.custody.cobo.com", PubKey: "02c3e5bacf436fbf4da78597e791579f022a2e85073ae36c54a361ff97f2811376"}
+	return Env{Host: "https://api.custody.cobo.com", PubKey: "02adb46f0c10b5ec51d0df2183a812fdf7b330ef2c948e36cdb479f1af73a22753"}
 }
