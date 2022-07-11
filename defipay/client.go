@@ -168,3 +168,14 @@ func SortParams(params map[string]string) string {
 	}
 	return strings.Join(sorted, "&")
 }
+
+func (c Client) VerifyEcc(message string, signature string) bool {
+	pubKeyBytes, _ := hex.DecodeString(c.Env.PublicKey)
+	pubKey, _ := btcec.ParsePubKey(pubKeyBytes, btcec.S256())
+
+	sigBytes, _ := hex.DecodeString(signature)
+	sigObj, _ := btcec.ParseSignature(sigBytes, btcec.S256())
+
+	verified := sigObj.Verify([]byte(Hash256x2(message)), pubKey)
+	return verified
+}
