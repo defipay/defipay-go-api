@@ -1,8 +1,10 @@
 package defipay
 
 import (
+	"encoding/hex"
 	"fmt"
 	"github.com/bitly/go-simplejson"
+	"github.com/btcsuite/btcd/btcec"
 	"io/ioutil"
 	"net/http"
 	"sort"

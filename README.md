@@ -26,6 +26,7 @@ defipay-go-api 是一個輕量級的 go 庫，用於與[Defipay API](http://doc.
         * [支付幣種详情](#支付幣種详情)
     * [匯率查詢](#匯率查詢)
         * [幣種匯率查詢](#幣種匯率查詢)
+    * [通知驗簽](#通知驗簽)
 
 ## 安裝 
 
@@ -233,3 +234,16 @@ client.QueryRate("ETH", "USDT")
 ```
 </details>
 
+
+### 通知驗簽
+
+```
+client.VerifyEcc("message", "signature")
+```
+<details>
+<summary>響應視圖</summary>
+
+```
+true
+```
+</details>

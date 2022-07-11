@@ -156,3 +156,9 @@ func GenerateKeyPair() {
 	println("API_SECRET:", apiSecret)
 	println("API_KEY:", apiKey)
 }
+
+func VerifyEcc() {
+	verified := client.VerifyEcc("", "")
+	fmt.Println("VerifyEcc：")
+	fmt.Println(bool(verified))
+}
