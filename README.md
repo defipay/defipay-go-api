@@ -33,7 +33,7 @@ defipay-go-api 是一個輕量級的 go 庫，用於與[Defipay API](http://doc.
 
 ``` 
 go get github.com/btcsuite/btcd/btcec@v0.22
-go get github.com/defipay/defipay-go-sdk/defipay
+go get github.com/defipay/defipay-go-api/defipay
 ```
 
 ## 測試
@@ -49,7 +49,7 @@ main.go
 #### 生成密鑰對
 
 ```
-import "github.com/defipay/defipay-go-sdk/defipay"
+import "github.com/defipay/defipay-go-api/defipay"
 
 apiSecret, apiKey := defipay.GenerateKeyPair()
 println("API_SECRET:", apiSecret)
@@ -59,7 +59,7 @@ println("API_KEY:", apiKey)
 #### 初始化RestClient
 
 ```
-import "github.com/defipay/defipay-go-sdk/defipay"
+import "github.com/defipay/defipay-go-api/defipay"
 
 var client = defipay.Client{
 	Signer: localSigner,
@@ -73,7 +73,7 @@ var client = defipay.Client{
 
 `ApiSigner` 可以通過實例化
 ```
-import "github.com/defipay/defipay-go-sdk/defipay"
+import "github.com/defipay/defipay-go-api/defipay"
 
 var localSigner = defipay.LocalSigner{
 	PrivateKey: "apiSecret ",
