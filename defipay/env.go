@@ -10,5 +10,5 @@ func Sandbox() Env {
 }
 
 func Prod() Env {
-	return Env{Host: "https://api.custody.cobo.com", PubKey: "02adb46f0c10b5ec51d0df2183a812fdf7b330ef2c948e36cdb479f1af73a22753"}
+	return Env{Host: "https://api.defipay.biz/api-service", PubKey: "02adb46f0c10b5ec51d0df2183a812fdf7b330ef2c948e36cdb479f1af73a22753"}
 }
