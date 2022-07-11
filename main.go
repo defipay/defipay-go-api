@@ -160,5 +160,5 @@ func GenerateKeyPair() {
 func VerifyEcc() {
 	verified := client.VerifyEcc("", "")
 	fmt.Println("VerifyEcc：")
-	fmt.Println(bool(verified))
+	fmt.Println(verified)
 }
