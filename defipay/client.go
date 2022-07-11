@@ -170,7 +170,7 @@ func SortParams(params map[string]string) string {
 }
 
 func (c Client) VerifyEcc(message string, signature string) bool {
-	pubKeyBytes, _ := hex.DecodeString(c.Env.PublicKey)
+	pubKeyBytes, _ := hex.DecodeString(c.Env.PubKey)
 	pubKey, _ := btcec.ParsePubKey(pubKeyBytes, btcec.S256())
 
 	sigBytes, _ := hex.DecodeString(signature)
