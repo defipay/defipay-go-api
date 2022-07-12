@@ -18,7 +18,7 @@ type Client struct {
 	Debug  bool
 }
 
-func (c Client) CreateOrder(notifyUrl string, returnUrl string, memberTransNo string, amount string, currency string, tokenIds string) (*simplejson.Json, *ApiError) {
+func (c Client) CreateOrder(notifyUrl string, returnUrl string, memberTransNo string, amount string, currency string, tokenIds string, payMode string) (*simplejson.Json, *ApiError) {
 	return c.Request("POST", "/v1/external/pay/create", map[string]string{
 		"notifyUrl":     notifyUrl,
 		"returnUrl":     returnUrl,
@@ -26,6 +26,7 @@ func (c Client) CreateOrder(notifyUrl string, returnUrl string, memberTransNo st
 		"amount":        amount,
 		"currency":      currency,
 		"tokenIds":      tokenIds,
+		"payMode":       payMode,
 	})
 }
 
